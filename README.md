@@ -17,7 +17,7 @@ You will realistically end up with a subset of:
 - `Directory.ReadWrite.All` — group membership removals (many tenants treat this as “heavy”; custom roles may be tighter).
 - `GroupMember.ReadWrite.All` — if you split permissions.
 
-Start with `Connect-MgGraph -TenantId '00000000-0000-0000-0000-000000000000' -Scopes User.ReadWrite.All,Directory.ReadWrite.All` and trim once you know what your security team allows.
+Start with `Connect-MgGraph -TenantId 'a1b2c3d4-e5f6-7890-abcd-ef1234567890' -Scopes User.ReadWrite.All,Directory.ReadWrite.All` and trim once you know what your security team allows.
 
 ## Hybrid estates
 
@@ -27,7 +27,7 @@ These scripts target **cloud directory objects**. If you sync from on-premises A
 
 ```powershell
 # Example: dry orchestration
-.\scripts\Invoke-Offboarding.ps1 -UserPrincipalName 'leaver@contoso.onmicrosoft.com' -WhatIf
+.\scripts\Invoke-Offboarding.ps1 -UserPrincipalName 'a.jones@harven.co.uk' -WhatIf
 
 # Individual steps also exist if you prefer not to use the orchestrator.
 ```
