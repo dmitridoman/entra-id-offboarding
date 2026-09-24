@@ -11,7 +11,7 @@ This is **dangerous automation** if you aim it at the wrong UPN. Run in a test t
 ## Prerequisites
 
 - PowerShell 7+ recommended (5.1 usually works if modules load).
-- `Microsoft.Graph` modules: at minimum `Microsoft.Graph.Users`, `Microsoft.Graph.Identity.DirectoryManagement`, `Microsoft.Graph.Groups`, `Microsoft.Graph.Reports` (reports optional for sign-in activity: not used in these basic scripts).
+- `Microsoft.Graph` modules: at minimum `Microsoft.Graph.Users`, `Microsoft.Graph.Identity.DirectoryManagement`, `Microsoft.Graph.Groups`, `Microsoft.Graph.Reports` (reports optional for sign-in activity, not used in these basic scripts).
 
 ## Typical Graph scopes (least privilege mindset)
 
